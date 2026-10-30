@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #eff6ff, #e0e7ff);
+            color: #080501;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #030603;
+            font-size: 30px;
+            text-align: center;
+            margin: 15px;
+        }
+
+        p {
+            background-color: white;
+            padding: 18px;
+            margin: 15px 0;
+            border: 1px solid #040507;
+            font-size: 28px;
+        }
+
+        p a {
+            color: #4338ca;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p a:hover {
+            color: #c11411;
+            text-decoration: underline;
+        }
+
+        nav {
+            background: linear-gradient(90deg, #11623c, #11623c);
+            padding: 18px;
+            margin: 25px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: #e6c336;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Contact Me</h2>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('education') }}">Education</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:dharund1001@gmail.com">dharund1001@gmail.com</a>
+    </p>
+
+    <p>
+        <strong>Phone:</strong>
+        <a href="tel:+919360406344">9360406344</a>
+    </p>
+
+    <p>
+        <strong>Social:</strong><br>
+        <a href="https://github.com/DharunD" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/dharun-d-1b7311297/" target="_blank">LinkedIn</a>
+    </p>
+</body>
+</html>

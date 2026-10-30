@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: linear-gradient(135deg, #34f28d, #34f28d);
+            color: #1e293b;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 30px;
+            text-align: center;
+            margin: 25px;
+        }
+
+        p {
+            background-color: white;
+            padding: 22px;
+            margin: 20px 0;
+            border: 2px solid #0a090a;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        nav {
+            background: linear-gradient(90deg, #010102,#010102);
+            padding: 18px;
+            margin: 25px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: #fef08a;
+            text-decoration: underline;
+        }
+
+        p a {
+            color: #090507;
+            font-weight: bold;
+        }
+
+        p a:hover {
+            color: #e7dd21;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>About Me</h2>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('education') }}">Education</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+        </ul>
+    </nav>
+</body>
+    <p>
+        I'm a Dharun D, I am recently completed my <bold>B.E-Computer Science and Engineering</bold> degree with a strong foundation in programming, problem-solving, database management, and web technologies.
+Currently, I'm focused on strengthening my skills in <bold>Python, Artificial Intelligence, and emerging technologies</bold> to expand my technical knowledge.
+I'm passionate about programming, exploring innovative technologies, and developing practical solutions through continuous learning and hands-on experience.
+    </p>
+    <p>
+        <a href="https://github.com/DharunD" target="_blank">Explore My Repositories</a> |
+        <a href="https://www.linkedin.com/in/dharun-d-1b7311297/" target="_blank">Connect Professionally</a>
+    </p>
+</html>

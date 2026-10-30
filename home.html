@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #14b7cc, #108b9b);
+            color: #030412;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #d51515;
+            font-size: 30px;
+            text-align: center;
+            margin: 25px;
+            text-transform: capitalize;
+        }
+
+        pre {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            white-space: pre-wrap;
+            background-color: #ffffff;
+            padding: 25px;
+            margin: 20px 0;
+            border: 2px solid #c4b5fd;
+        }
+
+        nav {
+            background: linear-gradient(90deg, #0a0acd, #0a0acd);
+            padding: 18px;
+            margin: 25px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: rgb(232, 226, 226);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: #e3ee4e;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome to My Portfolio</h2>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home')}}">Home</a></li>
+            <li><a href="{{ url_for('about')}}">About</a></li>
+            <li><a href="{{ url_for('education')}}">Education</a></li>
+            <li><a href="{{ url_for('contact')}}">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <pre>
+Hi! I'm Dharun D.
+
+I'm a <strong>BE-Computer Science and Engineering</strong> graduate with a strong interest in <em>programming and emerging technologies.
+I am passionate about learning new technologies and developing innovative solutions through coding.</em>
+
+<strong><bold>WELCOME MY PORTFOLIO</bold></portfolio></strong>
+Explore <i>My Technical Skills, Projects, Achievements, and Personal background to learn more about my knowledge, experience, and interests in technology.</i>
+    </pre>
+</body>
+</html>
